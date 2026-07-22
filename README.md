@@ -9,7 +9,7 @@ A layer-by-layer framework on the global AI value chain (semiconductors → clou
 
 **Selected work**
 
-- **[Stock Analyzer](https://stock-analyzer-60.vercel.app/)** — live AI analysis platform covering US · HK · China A-share markets, with a curated [AI Value-Chain map](https://stock-analyzer-60.vercel.app/value-chain) where every ticker carries a one-line investment thesis
+- **[Stock Analyzer](https://stockanalyzer-ai.vercel.app/)** — live AI analysis platform covering US · HK · China A-share markets, with a curated [AI Value-Chain map](https://stockanalyzer-ai.vercel.app/value-chain) where every ticker carries a one-line investment thesis
 - **[KCAS · Knowledge Capital Ecosystem](https://github.com/zijunVV/kcas-core)** — four open-sourced investment frameworks spanning the capital lifecycle: evaluate → research → allocate → create
 - **[zijunvv.github.io](https://zijunvv.github.io)** — full portfolio, background, and contact
 
