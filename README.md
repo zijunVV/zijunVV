@@ -15,7 +15,7 @@ I follow both the US and China AI markets, and work in English, Mandarin, and Ca
 
 **AI systems in production**
 
-- **Inner Order OS** ([live](https://inner-order-os.vercel.app)): An AI-assisted reflection platform on Next.js, PostgreSQL, and Groq. Built and deployed solo: multilingual embeddings with pgvector retrieval feeding context back into generation, three layers of output guardrails with rejections logged so model drift stays visible, row-level security, and a library-level guard that keeps user content out of the analytics table.
+- **Inner Order OS** ([live](https://inner-order-os.vercel.app)): An AI-assisted reflection platform on Next.js, PostgreSQL, and Groq. Built and deployed solo: multilingual embeddings with pgvector retrieval feeding context back into generation, three layers of output guardrails with rejections logged so model drift stays visible, row-level security, and a library-level guard that keeps user content out of the analytics table. I wrote up the retrieval layer's design decisions here: **[Building a retrieval layer I could defend](./notes/retrieval-layer.md)**.
 - **Bridge the Gap** ([live](https://bridge-the-gap-ai.vercel.app)): A cross-cultural Q&A platform with a content ranking algorithm of my own design: tiered quality buckets, weighted endorsements, Wilson lower-bound confidence scoring, and freshness decay.
 
 **Analytics and markets**
