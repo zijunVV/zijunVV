@@ -1,18 +1,44 @@
 # Zijun Wang
 
-I build AI products and write about the business behind them.
+I build production AI systems, model data that does not arrive clean, and read spatial evidence about what the technology is doing on the ground.
 
-My background is in NLP and machine learning. Most of my work now is on LLM applications, from model evaluation and backend design to deployment. My research starts with what I see in production: what still works after the demo, where the costs sit, and which companies keep the value. I follow both the US and China AI markets.
+Four strands, and they keep turning out to be the same habit applied to different material: take a question nobody has phrased precisely yet, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end.
+
+- **AI engineering.** Production LLM applications I design, build, deploy, and operate on my own: retrieval over vector search, output guardrails, per-task model assignment, and the debugging that starts once real traffic arrives.
+- **Data and modelling.** NLP, statistics, and machine learning, from topic modelling and sentiment classification to agent-based simulation of how behaviour spreads through a network.
+- **Geospatial.** Two degrees in geographic information science, and satellite-based estimation models for public-sector planning. The least fashionable and most distinctive thing I do.
+- **Product and delivery.** Four years converting client problems into requirements, workflows, dashboards, and rollout plans, then presenting the results to the people who had to act on them.
+
+I follow both the US and China AI markets, and work in English, Mandarin, and Cantonese.
 
 ## Selected work
 
-- **[Inner Order OS](https://github.com/zijunVV/inner-order-os)**: An AI-assisted reflection app built with Next.js, Supabase, and Groq. I built and deployed it solo, including output guardrails, model selection, and privacy controls. [Live](https://inner-order-os.vercel.app)
-- **[Stock Analyzer](https://stockanalyzer-ai.vercel.app/)**: An AI research tool for US, Hong Kong, and mainland China stocks. It includes an [AI value-chain map](https://stockanalyzer-ai.vercel.app/value-chain) with a short thesis for every company. FastAPI, React, and Groq.
-- **[Bridge the Gap](https://github.com/zijunVV/bridge-the-gap)**: A full-stack app for cross-cultural communication, with a ranking system for weighing community sources. [Live](https://bridge-the-gap-ai.vercel.app)
-- **[KCAS](https://github.com/zijunVV/kcas-core)**: Four open-source frameworks for evaluating, researching, allocating, and building knowledge capital.
+**AI systems in production**
 
-## Current research
+- **Inner Order OS** ([live](https://inner-order-os.vercel.app)): An AI-assisted reflection platform on Next.js, PostgreSQL, and Groq. Built and deployed solo: multilingual embeddings with pgvector retrieval feeding context back into generation, three layers of output guardrails with rejections logged so model drift stays visible, row-level security, and a library-level guard that keeps user content out of the analytics table.
+- **Bridge the Gap** ([live](https://bridge-the-gap-ai.vercel.app)): A cross-cultural Q&A platform with a content ranking algorithm of my own design: tiered quality buckets, weighted endorsements, Wilson lower-bound confidence scoring, and freshness decay.
 
-I am working on *Who Captures Value in the AI Era?* It follows the AI stack from semiconductors and cloud infrastructure through models, agents, and applications. I look at who controls scarce inputs, how that control turns into pricing power, and whether the resulting business is worth owning. I also keep a tracker of earnings predictions, commit them before each call, and grade them afterward. A research sample and deck are available on request.
+**Analytics and markets**
 
-More at [zijunvv.github.io](https://zijunvv.github.io). I work in English and Chinese, including Cantonese.
+- **[Stock Analyzer](https://github.com/zijunVV/stock-analyzer)** ([live](https://stockanalyzer-ai.vercel.app)): Equity analytics across US, Hong Kong, and China A-share markets. Live data ingestion, four-dimension analysis, an AI-ranked S&P 500 screener, and a curated [AI value-chain map](https://stockanalyzer-ai.vercel.app/value-chain). FastAPI, React, and Groq, with automatic model fallback when a provider hits capacity.
+
+**Geospatial**
+
+- **[AirportTwin AI](https://github.com/zijunVV/airport-twin-ai)**: A GIS-to-3D digital twin MVP for Hong Kong International Airport mobility simulation. Cleans public OpenStreetMap data and generates scene-ready geometry in a USD-ready hierarchy.
+
+**Research code**
+
+- **[OpinionDynamics_ESG](https://github.com/zijunVV/OpinionDynamics_ESG)**: My master's thesis pipeline. LDA topic modelling over 78,116 ESG-related reviews filtered from the Yelp Open Dataset with the topic count selected by coherence score, sentiment scored with a pretrained multilingual BERT model, then a Mesa agent-based model on a Barabási-Albert scale-free network to test when a narrative spreads through a community and when it stalls.
+
+**Frameworks and method**
+
+- **[KCAS](https://github.com/zijunVV/kcas-core)**: Four open-source frameworks for evaluating, researching, allocating, and building knowledge capital. Documentation and framework design, not a running system.
+- **[agent-spec-template](https://github.com/zijunVV/agent-spec-template)**: A two-layer specification template for AI coding agents. Fourteen patterns, each one traced back to a real failure.
+
+## What I am learning
+
+Where the economic value of AI ends up, layer by layer, from semiconductors and cloud through models, agents, and applications. I come at that question from an unusual direction, which is what these systems cost and what they can genuinely do once you have built with them.
+
+What runs today is the collection layer: scheduled agents assemble weekly industry digests and pull consensus data, with interpretation kept manual on purpose. The industry and financial half of this is a track I started in early 2026 and am still learning, so I would rather label it that way than overstate it.
+
+More at [zijunvv.github.io](https://zijunvv.github.io).
