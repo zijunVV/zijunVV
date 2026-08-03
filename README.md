@@ -26,10 +26,6 @@ I follow both the US and China AI markets, and work in English, Mandarin, and Ca
 
 - **[AirportTwin AI](https://github.com/zijunVV/airport-twin-ai)**: A GIS-to-3D digital twin MVP for Hong Kong International Airport mobility simulation. Cleans public OpenStreetMap data and generates scene-ready geometry in a USD-ready hierarchy.
 
-**Research code**
-
-- **[OpinionDynamics_ESG](https://github.com/zijunVV/OpinionDynamics_ESG)**: My master's thesis pipeline. LDA topic modelling over 78,116 ESG-related reviews filtered from the Yelp Open Dataset with the topic count selected by coherence score, sentiment scored with a pretrained multilingual BERT model, then a Mesa agent-based model on a Barabási-Albert scale-free network to test when a narrative spreads through a community and when it stalls.
-
 **Frameworks and method**
 
 - **[KCAS](https://github.com/zijunVV/kcas-core)**: Four open-source frameworks for evaluating, researching, allocating, and building knowledge capital. Documentation and framework design, not a running system.
