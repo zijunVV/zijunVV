@@ -2,11 +2,11 @@
 
 I build production AI systems, model data that does not arrive clean, and read spatial evidence about what the technology is doing on the ground.
 
-Four strands, and they keep turning out to be the same habit applied to different material: take a question nobody has phrased precisely yet, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end.
+Four strands, and they keep turning out to be the same habit applied to different material: take an imprecisely framed question, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end.
 
 - **AI engineering.** Production LLM applications I design, build, deploy, and operate on my own: retrieval over vector search, output guardrails, per-task model assignment, and the debugging that starts once real traffic arrives.
 - **Data and modelling.** NLP, statistics, and machine learning, from topic modelling and sentiment classification to agent-based simulation of how behaviour spreads through a network.
-- **Geospatial.** Two degrees in geographic information science, and satellite-based estimation models for public-sector planning. The least fashionable and most distinctive thing I do.
+- **Geospatial.** Two degrees in geographic information science, and satellite-based estimation models for public-sector planning. A less common and especially distinctive part of my work.
 - **Product and delivery.** Four years converting client problems into requirements, workflows, dashboards, and rollout plans, then presenting the results to the people who had to act on them.
 
 I follow both the US and China AI markets, and work in English, Mandarin, and Cantonese.
@@ -33,8 +33,8 @@ I follow both the US and China AI markets, and work in English, Mandarin, and Ca
 
 ## What I am learning
 
-Where the economic value of AI ends up, layer by layer, from semiconductors and cloud through models, agents, and applications. I come at that question from an unusual direction, which is what these systems cost and what they can genuinely do once you have built with them.
+Where the economic value of AI ends up, layer by layer, from semiconductors and cloud through models, agents, and applications. I approach that question from a practical direction: what these systems cost and what they can genuinely do once you have built with them.
 
-What runs today is the collection layer: scheduled agents assemble weekly industry digests and pull consensus data, with interpretation kept manual on purpose. The industry and financial half of this is a track I started in early 2026 and am still learning, so I would rather label it that way than overstate it.
+What runs today is the collection layer: scheduled agents assemble weekly industry digests and pull consensus data, with interpretation kept manual on purpose. I started the industry and financial part of this work in early 2026 and describe it as an active learning track.
 
 More at [zijunvv.github.io](https://zijunvv.github.io).
