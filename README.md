@@ -1,8 +1,10 @@
 # Zijun Wang
 
-I build production AI systems, model data that does not arrive clean, and read spatial evidence about what the technology is doing on the ground.
+**I turn systems nobody can see whole into models you can reason with.**
 
-Four strands, and they keep turning out to be the same habit applied to different material: take an imprecisely framed question, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end.
+Space, social behaviour, industry structure, physical capital — the material has changed every few years, the move has not: take an imprecisely framed question, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end. The list of domains is open; each new one is another instance, not a change of direction.
+
+In practice that shows up as four kinds of work:
 
 - **AI engineering.** Production LLM applications I design, build, deploy, and operate on my own: retrieval over vector search, output guardrails, per-task model assignment, and the debugging that starts once real traffic arrives.
 - **Data and modelling.** NLP, statistics, and machine learning, from topic modelling and sentiment classification to agent-based simulation of how behaviour spreads through a network.
