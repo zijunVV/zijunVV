@@ -1,42 +1,39 @@
 # Zijun Wang
 
-**I turn systems nobody can see whole into models you can reason with.**
+Hi, I'm Zijun. I build applied AI products, with most of my recent work focused on agents, retrieval, evaluation, and the safeguards around tool use.
 
-Space, social behaviour, industry structure, physical capital — the material has changed every few years, the move has not: take an imprecisely framed question, find the data that can answer it, build the thing that produces the answer, and stay accountable for the number at the end. The list of domains is open; each new one is another instance, not a change of direction.
+I came to AI by a slightly indirect route. I studied geographic information science and remote sensing, then spent four years working across data analysis, product delivery, and government digitalisation projects in China. Later, at the University at Buffalo, I used NLP and agent based modelling to study how sustainability narratives spread through social networks.
 
-In practice that shows up as four kinds of work:
+Most of my work starts with a question that is still too vague to code. I like talking it through, deciding what evidence would count, and only then choosing the model or stack. I also try to be plain about limits. A local MVP is a local MVP, and a metric on synthetic data is useful but is not the same as user adoption.
 
-- **AI engineering.** Production LLM applications I design, build, deploy, and operate on my own: retrieval over vector search, output guardrails, per-task model assignment, and the debugging that starts once real traffic arrives.
-- **Data and modelling.** NLP, statistics, and machine learning, from topic modelling and sentiment classification to agent-based simulation of how behaviour spreads through a network.
-- **Geospatial.** Two degrees in geographic information science, and satellite-based estimation models for public-sector planning. A less common and especially distinctive part of my work.
-- **Product and delivery.** Four years converting client problems into requirements, workflows, dashboards, and rollout plans, then presenting the results to the people who had to act on them.
+I am looking for applied AI and AI agent roles in Singapore, and I am happy to relocate and work locally. I work in English, Mandarin, and Cantonese.
 
-I follow both the US and China AI markets, and work in English, Mandarin, and Cantonese.
+## Current project
 
-## Selected work
+### [Social Memory Copilot](https://github.com/zijunVV/social-memory-copilot)
 
-**AI systems in production**
+I built this because a useful personal assistant should remember more than a contact's name. It should know where the last conversation stopped, what was promised, and how that person prefers to communicate. The project is a local portfolio MVP built with Google ADK, FastAPI, PostgreSQL, and pgvector.
 
-- **Inner Order OS** ([live](https://inner-order-os.vercel.app)): An AI-assisted reflection platform on Next.js, PostgreSQL, and Groq. Built and deployed solo: multilingual embeddings with pgvector retrieval feeding context back into generation, three layers of output guardrails with rejections logged so model drift stays visible, row-level security, and a library-level guard that keeps user content out of the analytics table. I wrote up the retrieval layer's design decisions here: **[Building a retrieval layer I could defend](./notes/retrieval-layer.md)**.
-- **Bridge the Gap** ([live](https://bridge-the-gap-ai.vercel.app)): A cross-cultural Q&A platform with a content ranking algorithm of my own design: tiered quality buckets, weighted endorsements, Wilson lower-bound confidence scoring, and freshness decay.
+The retrieval path combines BM25 and vector search, followed by RRF and a lightweight reranker. On a small synthetic evaluation set, Recall@5 rose from 0.682 with either route alone to 0.889 after fusion and reranking. Memory writes and reminders stay pending until the user confirms them. The repository currently has 354 passing tests across unit and integration suites.
 
-**Analytics and markets**
+This is a working local MVP, not a deployed product with real users. The work has taught me a lot about session state, memory boundaries, retrieval quality, user isolation, prompt injection handling, and safe side effects.
 
-- **[Stock Analyzer](https://github.com/zijunVV/stock-analyzer)** ([live](https://stockanalyzer-ai.vercel.app)): Equity analytics across US, Hong Kong, and China A-share markets. Live data ingestion, four-dimension analysis, an AI-ranked S&P 500 screener, and a curated [AI value-chain map](https://stockanalyzer-ai.vercel.app/value-chain). FastAPI, React, and Groq, with automatic model fallback when a provider hits capacity.
+## Other work
 
-**Geospatial**
+- **[Stock Analyzer](https://github.com/zijunVV/stock-analyzer)** ([live](https://stockanalyzer-ai.vercel.app)): Equity analysis across the US, Hong Kong, and China A-share markets. It includes live market data, an S&P 500 screener, company analysis, and automatic model fallback when a provider is unavailable.
+- **Inner Order OS** ([live](https://inner-order-os.vercel.app)): A reflection product built on Next.js and PostgreSQL. Its retrieval layer brings relevant past entries back into the conversation, while output checks keep the model within the product's intended role. I wrote about the design choices in [Building a retrieval layer I could defend](./notes/retrieval-layer.md).
+- **Bridge the Gap** ([live](https://bridge-the-gap-ai.vercel.app)): A bilingual knowledge product for cross-cultural food questions. Its ranking method combines weighted endorsements, Wilson score confidence, and freshness decay.
+- **[AirportTwin AI](https://github.com/zijunVV/airport-twin-ai)**: A GIS to 3D prototype for roads around Hong Kong International Airport. It cleans OpenStreetMap data and turns it into scene-ready geometry for future mobility simulation.
+- **[KCAS](https://github.com/zijunVV/kcas-core)**: Four open-source frameworks for research, capital allocation, and project decisions. This is documentation and method design rather than a running application.
 
-- **[AirportTwin AI](https://github.com/zijunVV/airport-twin-ai)**: A GIS-to-3D digital twin MVP for Hong Kong International Airport mobility simulation. Cleans public OpenStreetMap data and generates scene-ready geometry in a USD-ready hierarchy.
+## Earlier work
 
-**Frameworks and method**
+Before these projects, I worked as a product manager and data analyst on more than six government digitalisation projects. I defined metrics, wrote SQL and Python analysis workflows, translated stakeholder needs into product requirements, and coordinated delivery across engineering, data, and design teams.
 
-- **[KCAS](https://github.com/zijunVV/kcas-core)**: Four open-source frameworks for evaluating, researching, allocating, and building knowledge capital. Documentation and framework design, not a running system.
-- **[agent-spec-template](https://github.com/zijunVV/agent-spec-template)**: A two-layer specification template for AI coding agents. Fourteen patterns, each one traced back to a real failure.
+I also worked in remote sensing, where I used satellite imagery and machine learning for public-sector planning and environmental assessment. At the University at Buffalo, I later joined an NSF-funded research project on how communities share information and help one another during extreme winter storms.
 
-## What I am learning
+## What I am studying now
 
-Where the economic value of AI ends up, layer by layer, from semiconductors and cloud through models, agents, and applications. I approach that question from a practical direction: what these systems cost and what they can genuinely do once you have built with them.
+I am learning how economic value moves through the AI industry, particularly across chips, cloud infrastructure, models, and applications in the US and China. Scheduled agents help me collect weekly material and consensus data, but I keep the reading and interpretation manual. I started this part of the work in early 2026, so I still describe it as a learning track rather than expertise.
 
-What runs today is the collection layer: scheduled agents assemble weekly industry digests and pull consensus data, with interpretation kept manual on purpose. I started the industry and financial part of this work in early 2026 and describe it as an active learning track.
-
-More at [zijunvv.github.io](https://zijunvv.github.io).
+More projects and background are available at [zijunvv.github.io](https://zijunvv.github.io).
